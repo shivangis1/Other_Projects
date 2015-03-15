@@ -1,0 +1,155 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<title>Zest - Book-A-Table</title>
+<link href="indexcss.css" rel="stylesheet" type="text/css" />
+<script>
+function myFunction()
+{
+if(document.booking.frstname.value=="") 
+  {
+  alert("First Name Must Be Filled Out");
+document.booking.frstname.focus();
+  return false;
+  }
+
+if(document.booking.emailid.value=="")
+{
+alert("Email Id Not Entered!")
+document.booking.emailid.focus();
+return false;
+}
+
+if(document.booking.mobile.value=="")
+{
+alert("Mobile Number Not Entered!")
+document.booking.mobile.focus();
+return false;
+}
+
+if(document.booking.nop.value=="")
+{
+alert("Number Of People Not Entered!")
+document.booking.nop.focus();
+return false;
+}
+
+if(document.booking.place.value=="")
+{
+alert("Place Not Entered!")
+document.booking.mobile.focus();
+return false;
+}
+
+if(document.booking.hr.value=="")
+{
+alert("Please Specify The Time!!!")
+document.booking.hr.focus();
+return false;
+}
+
+if(document.booking.min.value=="")
+{
+alert("Please Specify The Time!!!")
+document.booking.min.focus();
+return false;
+}
+
+
+
+if(document.booking.yyyy.value=="")
+{
+alert("Date Not Entered!!!")
+document.booking.yyyy.focus();
+return false;
+}
+
+{
+alert("Thank you for using our Book-A-Table service. We shall contact you as soon as possible. ");
+}
+}
+</script>
+</head>
+
+<body background="Images/BodyBg.jpg">
+	<div class="container">
+  		<div id="header" style="background:url(Images/orange2.png)">
+	  		<a href="index.html"><img class="logo" src="Images/logo.png" height="100px" style="display:block;" /></a>
+    		<a href="index.html"><img class="name" src="Images/name.png" /></a><br />
+  			<br /><br /><br /><br /><br />
+	        <div id="navig">
+				<ul id="tabs">
+					<li id="menu"><a href="menu.html"></a></li>
+					<li id="abo"><a href="about.html"></a></li>
+					<li id="loc"><a href="location.html"></a></li>
+					<li id="book"><a href="bookatable.html"></a></li>
+					<li id="cat"><a href="catering.html"></a></li>
+					<li id="con"><a href="contact.html"></a></li>
+					<li id="home"><a href="index.html"></a></li>
+				</ul>
+			</div><!--End navig div-->
+	  </div><!--End header-->
+
+ <div class="content">
+	<div id="bat">
+		<div id="batrow1" style="background:url(images/bookatable.jpg) no-repeat; background-size:100%">
+		</div><!--End batrow1-->
+        
+        <div id="batrow2" style="background-image:url(Images/Box.png)">
+			<h2>Table Bookings</h2>
+            All online bookings must be made 24 hours before date of dining and are to be confirmed by phone or email, prior to dining.
+			<p>For any enquiries with regards to bookings, please contact us <a href="contact.html">here</a>.
+			<br /><br /><br />
+			
+            <form name="booking" method=link   onsubmit="myFunction()">
+            <table  border="0" align="center">
+			<tr>
+				<td><b>Name : -</b></td> 	
+				<td><input type="text" name="frstname" onblur="this.className='formelements'" size="30" onfocus="this.className='formfocuselements'"></td>
+			</tr>
+			<tr>
+				<td><b>Email-Id :-</b></td>
+				<td> <input type="text" name="emailid" onblur="this.className='formelements'" size="30" onfocus="this.className='formfocuselements'"></td>
+			</tr>                                                   
+            <tr>
+				<td><b>Mobile No:-</b></td>
+				<td> <input type="text" name="mobile" onblur="this.className='formelements'" size="30" onfocus="this.className='formfocuselements'"></td>
+			</tr>
+			<tr>
+				<td><b>Number Of People:-</b></td>
+				<td> <input type="text" name="nop" onblur="this.className='formelements'" size="30" onfocus="this.className='formfocuselements'"></td>
+			</tr>
+			<tr>
+				<td><b>Place:-</b></td>
+				<td><select name="place" onblur="this.className='formelements'" onfocus="this.className='formfocuselements'" >
+					<option value="select" selected="selected">Please Select</option>
+					<option value="Fmlyrm">Family Room</option>
+					<option value="seavw">Sea View</option>
+					<option value="any">Any</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td><b>Time:-</b></td>
+				<td> <input type="text" name="hr" onblur="this.className='formelements'" size="2" onfocus="this.className='formfocuselements'" value=12>:
+				 <input type="text" name="min" onblur="this.className='formelements'" size="2" onfocus="this.className='formfocuselements'" value=00>
+				 <select name="place" onblur="this.className='formelements'" onfocus="this.className='formfocuselements'" >
+					<option value="select" selected="selected">am</option>
+					<option value="select" >pm</option>
+				</td>
+			</tr>
+			<tr>
+				<td><b>Date:-</b></td>
+				<td> <input type="text" name="dd" onblur="this.className='formelements'" size="2" onfocus="this.className='formfocuselements'" value=DD>-
+				 <input type="text" name="mm" onblur="this.className='formelements'" size="2" onfocus="this.className='formfocuselements'" value=MM>-
+				 <input type="text" name="yyyy" onblur="this.className='formelements'" size="4" onfocus="this.className='formfocuselements'" value=YYYY></td>
+			</tr>
+            </table>
+			
+            <input type="submit" value="" class="Book" alt="Book">
+            </form>
+		</div><!--End batrow2-->
+	</div>
+	
+</body>
+</html>

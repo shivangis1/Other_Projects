@@ -1,0 +1,108 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<title>Contact Us</title>
+<link href="indexcss.css" rel="stylesheet" type="text/css" />
+<script>
+function myFunction()
+{
+if(document.contact.frstname.value=="") 
+  {
+  alert("First Name Must Be Filled Out");
+document.contact.frstname.focus();
+  return false;
+  }
+
+if(document.contact.emailid.value=="")
+{
+alert("Email Id Not Entered!!!")
+document.contact.emailid.focus();
+return false;
+}
+
+if(document.contact.mobile.value=="")
+{
+alert("Mobile Number Not Entered!!!")
+document.contact.mobile.focus();
+return false;
+}
+
+{
+alert("Your Message Has Been Recieved.We will try to contact you as soon as possible!!!! ");
+}
+}
+</script>
+
+</head>
+
+<body>
+<body background="Images/BodyBg.jpg">
+<div class="container">  
+  <div id="header" style="background:url(Images/orange2.png)">
+  	<a href="index.html"><img class="logo" src="Images/logo.png" height="100px" style="display:block;" /></a>
+    <a href="index.html"><img class="name" src="Images/name.png" /></a><br />
+  	<br /><br /><br /><br /><br />
+    <div id="navig">
+		<ul id="tabs">
+			<li id="menu"><a href="menu.html"></a></li>
+			<li id="abo"><a href="about.html"></a></li>
+			<li id="loc"><a href="location.html"></a></li>
+			<li id="book"><a href="bookatable.html"></a></li>
+			<li id="cat"><a href="catering.html"></a></li>
+			<li id="con"><a href="contact.html"></a></li>
+			<li id="home"><a href="index.html"></a></li>
+		</ul>
+	</div>
+  </div>
+  <!-- end .header -->
+
+  <div class="content">
+  	<div id="contact">
+		<div class="column1of2" align="left" style="background-image:url(Images/contactimg.jpg)">
+		</div>
+		<div class="column2of2" style="background-image:url(Images/Box.png)">
+			<h2>Contact Us</h2>
+			<br />We truly love hearing from our customers.
+            <br /> If you have any comments, concerns or general questions,
+					please use the form below and let us know what's on your mind.
+
+            <form name="contact" method=link   onsubmit="myFunction()">
+            <table  border="0" align="center">
+			<tr>
+				<td><b>Name : -</b></td> 	
+				<td><input type="text" name="frstname" onblur="this.className='formelements'" size="30" onfocus="this.className='formfocuselements'"></td>
+			</tr>
+			<tr>
+				<td><b>Email-Id :-</b></td>
+				<td> <input type="text" name="emailid" onblur="this.className='formelements'" size="30" onfocus="this.className='formfocuselements'"></td>
+			</tr>
+                                                                    
+                                                                   <tr>
+				<td><b>Mobile No:-</b></td>
+				<td> <input type="text" name="mobile" onblur="this.className='formelements'" size="30" onfocus="this.className='formfocuselements'"></td>
+			</tr>
+			<tr>
+				<td><b>Category : -</b></td>
+				<td><select name="category" onblur="this.className='formelements'" onfocus="this.className='formfocuselements'">
+					<option value="select" selected="selected">General Inquiry </option>
+					<option value="catering">Catering Inquiry</option>
+					<option value="job">Job Inquiry</option>
+					<option value="book">Booking Inquiry</option>
+					<option value="other">Other Inquiry</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td><b>Message:-</b></td>
+				<td><textarea rows="5" cols="25" onblur="this.className='formelements'" onfocus="this.className='formfocuselements'">Your Message here.</textarea></td>
+			</tr>
+            </table>
+			
+            <input type="submit" value="" class="Submit" alt="Send Message">
+            </form>
+		</div><!--End of column2of2-->
+	</div><!--End of contact div-->
+  </div><!--End of content div-->
+</div><!--End of container div-->
+</body>
+</html>

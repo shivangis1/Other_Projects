@@ -1,0 +1,221 @@
+@charset "utf-8";
+body
+{
+	margin-left:160px;
+	margin-right:160px;
+	margin-top:0px;
+	margin-bottom:0px;
+}
+a:hover
+{
+	text-decoration:none;
+}
+a
+{
+	text-decoration:none;
+}
+#headwrapper
+{
+	background-color:ivory;
+	margin-top:0px;
+	margin-bottom:0px;
+	border:10px;
+	border-color:black;
+}
+#logo
+{
+	padding:10px;
+	width:200px;
+	height:60px;
+	border:none;
+	margin-left:20px;
+	margin-top:20px;
+}
+#imglogo
+{
+	display:inline-block;
+}
+ul
+{
+	list-style-type:none;
+	margin:0;
+	padding:0;
+	overflow:hidden;
+}
+#products
+{
+	float:right;
+}
+.mainnav
+{
+	float:right;
+}
+.mainnav li, #products li
+{	float:left;
+	font-family:"Arial";
+	font-size:18px;
+	margin-left:10px;
+	text-align:center;
+	font-weight:bold;
+}
+.nav a
+{	
+	display:block;
+	width:185px;
+	padding-left:1em;
+	padding-right:1em;
+	background-color:#15317E;
+	color:white;
+	padding:8px;
+	text-decoration:none;
+}
+.nav a:hover
+{
+	font-style:italic;
+	text-shadow:2px 2px #000000;
+}
+/*Index page*/
+#home
+{
+	padding:25px;
+	font-family:Cambria;
+	height:400px;
+}
+.links img
+{
+	width:300px;
+	height:200px;
+	border: 1px solid #000000;
+	position: relative;
+	top: 0px;
+	left: 1px;
+}
+.links
+{
+	display:block;
+	float:left;
+	height:200px;
+	margin-right:20px;
+}
+.linkname
+{
+	background-color: #000;
+	position:relative;
+	top:255px;
+	right:-1px;
+	opacity:.8;
+	width: 302px;
+	padding: 8px 0px 10px 0px;
+	font-size: 15px;
+	color: #fff;
+	font-weight: bold;
+	z-index: 2;
+	text-align:right;
+	letter-spacing:2px;
+}
+/*About Us page */
+#sess
+{	height:300px;
+}
+/*Register page */
+#register
+{
+	height:400px;
+}
+/*Footer page*/
+#footwrapper
+{
+	background-color:ivory;
+	margin-top:0px;
+	margin-bottom:0px;
+	text-align:center;
+	color:#15317E;
+	font-family:'Verdana';
+}
+.content
+{
+	padding:10px;
+	font-family:Cambria;
+}	
+.ulprod img
+{
+	width:150px;
+	height:150px;
+}
+.ulprod, .ulprodb
+{
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	text-align:center;
+	font-size:16px;
+}
+ .ulprodb img
+ {
+	 width:100px;
+	 height:150px;
+ }
+ #searchbutton
+ {
+	 width:20px;
+	 height:22px;
+ }
+ #paywrapper
+ {
+	background-color:ivory;
+	margin-top:0px;
+	margin-bottom:0px;
+	border:10px;
+	border-color:black;
+	padding:10px;
+	font-family:Cambria;
+ }
+ #ocwrapper
+ {
+	background-color:ivory;
+	margin-top:0px;
+	margin-bottom:0px;
+	border:10px;
+	border-color:black;
+	padding:10px;
+	font-family:Cambria;
+	height:400px;
+ }
+ #cartwrapper
+ {
+	background-color:ivory;
+	margin-top:0px;
+	margin-bottom:0px;
+	border:10px;
+	border-color:black;
+	padding:10px;
+	font-family:Cambria;
+	height:400px;
+ }
+ #logoutcontainer
+ {
+	background-color:ivory;
+	margin-top:0px;
+	margin-bottom:0px;
+	border:10px;
+	border-color:black;
+	padding:10px;
+	font-family:Cambria;
+	height:300px;
+ }
+ #back
+{
+	background:url(Images/back.png) no-repeat center top;
+	background-size:100px 34px;
+	width:100px;
+	height:34px;
+	display:block;
+}
+#done, #reg, #log2
+ {
+	 width:100px;
+	 height:34x;
+ }
+ #add
+ {
+	 width:50px;
+	 height:50px;
+ }
